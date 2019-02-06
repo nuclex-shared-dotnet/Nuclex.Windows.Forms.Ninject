@@ -35,7 +35,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Ninject.ClientProfile">
-      <HintPath>..\..\ItGlueQueryTool\References\ninject\net-4.0\Ninject.ClientProfile.dll</HintPath>
+      <HintPath>..\References\ninject\net-4.0\Ninject.ClientProfile.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
