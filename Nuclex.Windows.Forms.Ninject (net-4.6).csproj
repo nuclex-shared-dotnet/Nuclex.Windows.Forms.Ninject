@@ -9,10 +9,11 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Nuclex.Windows.Forms.Ninject</RootNamespace>
     <AssemblyName>Nuclex.Windows.Forms.Ninject</AssemblyName>
-    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
-    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -23,15 +24,17 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <DocumentationFile>bin\net-4.0\Debug\Nuclex.Windows.Forms.Ninject.xml</DocumentationFile>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
-    <OutputPath>bin\net-4.0\Release\</OutputPath>
+    <OutputPath>bin\net-4.6\Release\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <DocumentationFile>bin\net-4.0\Release\Nuclex.Windows.Forms.Ninject.xml</DocumentationFile>
+    <DocumentationFile>bin\net-4.6\Release\Nuclex.Windows.Forms.Ninject.xml</DocumentationFile>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup>
     <SignAssembly>true</SignAssembly>
@@ -40,8 +43,8 @@
     <AssemblyOriginatorKeyFile>..\Foundation.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Ninject.ClientProfile">
-      <HintPath>..\References\ninject\net-4.0\Ninject.ClientProfile.dll</HintPath>
+    <Reference Include="Ninject">
+      <HintPath>..\References\ninject\net-4.6-inofficial\Ninject.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -57,19 +60,19 @@
     <Compile Include="Source\MvvmModule.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Nuclex.Support\Nuclex.Support %28net-4.0%29.csproj">
-      <Project>{00567408-4f44-4c00-866e-b04a99e482f2}</Project>
-      <Name>Nuclex.Support %28net-4.0%29</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Nuclex.Windows.Forms\Nuclex.Windows.Forms %28net-4.0%29.csproj">
-      <Project>{b2bfa3ec-3b7b-4ee0-8395-8426b5c7a8b8}</Project>
-      <Name>Nuclex.Windows.Forms %28net-4.0%29</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <None Include="..\Foundation.snk">
       <Link>Foundation.snk</Link>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Nuclex.Support\Nuclex.Support %28net-4.6%29.csproj">
+      <Project>{00567408-4f44-4c00-866e-b04a99e482f2}</Project>
+      <Name>Nuclex.Support %28net-4.6%29</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Nuclex.Windows.Forms\Nuclex.Windows.Forms %28net-4.6%29.csproj">
+      <Project>{b2bfa3ec-3b7b-4ee0-8395-8426b5c7a8b8}</Project>
+      <Name>Nuclex.Windows.Forms %28net-4.6%29</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
