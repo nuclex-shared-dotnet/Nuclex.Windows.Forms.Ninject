@@ -15,7 +15,7 @@ the following directory layout:
         Nuclex.Windows.Forms/            <-- Git: nuclex-shared-dotnet/Nuclex.Windows.Forms
             ...
 
-        Nuclex.Support.Native/           <-- Git: nuclex-shared-dotnet/Nuclex.Support
+        Nuclex.Support/                  <-- Git: nuclex-shared-dotnet/Nuclex.Support
             ...
 
         third-party/
@@ -28,8 +28,8 @@ repository (with `--recurse-submodules`).
 
 The actual, direct requirements of the code to compile are:
 
-  * Nuclex.Support
-  * Nuclex.Windows.Forms
+  * Nuclex.Support         (project)
+  * Nuclex.Windows.Forms   (project)
   * ninject
   * nunit (optional, if unit tests are built)
   * nmock (optional, if unit tests are built)
