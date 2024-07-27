@@ -32,7 +32,6 @@ The actual, direct requirements of the code to compile are:
   * Nuclex.Windows.Forms   (project)
   * ninject                (NuGet package)
   * nunit                  (NuGet package, optional, if unit tests are built)
-  * nmock                  (NuGet package, optional, if unit tests are built)
 
 
 To Use this Library as a Binary
