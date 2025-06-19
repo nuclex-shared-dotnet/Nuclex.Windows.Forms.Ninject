@@ -19,6 +19,10 @@ limitations under the License.
 
 using System;
 
+#if NET6_0_OR_GREATER
+using System.Runtime.Versioning;
+#endif
+
 using Ninject;
 using Ninject.Activation;
 using Ninject.Modules;
@@ -29,7 +33,10 @@ using Nuclex.Windows.Forms.Messages;
 
 namespace Nuclex.Windows.Forms.Ninject {
 
-  /// <summary>Sets up the service bindings for an MVVM-based WPF application</summary>
+  /// <summary>Sets up the service bindings for an MVVM-based application</summary>
+#if NET6_0_OR_GREATER
+  [SupportedOSPlatform("windows")]
+#endif
   public class MvvmModule : NinjectModule {
 
     /// <summary>Called when the module is loaded into the kernel</summary>

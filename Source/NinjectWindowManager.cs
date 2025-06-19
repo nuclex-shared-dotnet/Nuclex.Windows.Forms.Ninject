@@ -19,6 +19,10 @@ limitations under the License.
 
 using System;
 
+#if NET6_0_OR_GREATER
+using System.Runtime.Versioning;
+#endif
+
 using Ninject;
 
 using Nuclex.Windows.Forms.AutoBinding;
@@ -26,6 +30,9 @@ using Nuclex.Windows.Forms.AutoBinding;
 namespace Nuclex.Windows.Forms.Ninject {
 
 	/// <summary>Window manager that is using Ninject</summary>
+#if NET6_0_OR_GREATER
+  [SupportedOSPlatform("windows")]
+#endif
 	public class NinjectWindowManager : WindowManager {
 
 		/// <summary>Initializes a new window manager</summary>
