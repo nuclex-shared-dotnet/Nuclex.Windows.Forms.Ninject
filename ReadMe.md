@@ -1,10 +1,4 @@
-  - **Status:** Stable and mature. Several projects are using this library,
-    and it has received extensive testing on Linux and Windows.
-
-  - **Platforms:** Cross-platform, developed on Linux but also tested and
-    working without any known issues on Windows.
-
-Nuclex.Windows.Forms.Ninject
+Nuclex.Windows.Forms.Ninject ![Windows-only due to using Windows Forms](./Documents/images/platforms-windows-badge.svg) ![Several projects are using library and it has received extensive testting](./Documents/images/status-mature-and-stable-badge.svg)
 ============================
 
 Nuclex.Windows.Forms is a standalone, lightweight MVVM library that lets you "display"
